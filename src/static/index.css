@@ -1,0 +1,122 @@
+/* bengali */
+@font-face {
+    font-family: 'Mina';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/mina/v11/-nFzOGc18vARnypp7x3y.woff2) format('woff2');
+    unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9, U+25CC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Mina';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/mina/v11/-nFzOGc18vARnzZp7x3y.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Mina';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/mina/v11/-nFzOGc18vARnzhp7w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h1, p {
+    font-family: 'Mina';
+}
+
+body {
+    margin: 0;
+}
+
+.main-body {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.navbar {
+    display: flex;
+    background-color: DodgerBlue;
+    width: 100%;
+    height: 50px;
+    /*padding-left: 20px;
+    padding-right: auto;*/
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+    .navbar > .flex-container {
+        width: 95%;
+        justify-content: space-between;
+    }
+
+.navbar-brand {
+    font-family: 'Mina';
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-cart {
+}
+
+.searchbar {
+    font-family: Mina;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+    justify-content: center;
+}
+
+/*    .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }*/
+
+.products-display {
+    /*align-content: center;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.product {
+    background-color: darkred;
+    width: 30%;
+    height: 350px;
+    margin: 10px;
+}
+
+.productImage {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.productInfo {
+    text-align: left;
+}
+
+.productTitle {
+    font-family: 'Mina';
+    font-size: 20px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.productPrice {
+    font-family: 'Mina';
+    font-size: 15px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
