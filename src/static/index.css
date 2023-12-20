@@ -38,7 +38,7 @@ body {
 
 .navbar {
     display: flex;
-    background-color: DodgerBlue;
+    background-color: #37B5FF;
     width: 100%;
     height: 50px;
     align-items: center;

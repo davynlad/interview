@@ -33,9 +33,11 @@ function searchProducts(targetProduct, originalProducts) {
     const productMatches = document.getElementById('result1');
 
     originalProducts.forEach(product => {
-        let index = targetProduct.length - 1;
-        if (product.title.toLowerCase().charAt(index) == targetProduct.charAt(index)) {
+        // let index = targetProduct.length - 1;
+        console.log(`targetval: ${targetProduct}`);
+        if (product.title.toLowerCase().includes(targetProduct)) {
             matchingProducts.push(product);
+            console.log(`matchvals: ${product.title}`);
         }
     });
     displayProductsOnPage(matchingProducts);
