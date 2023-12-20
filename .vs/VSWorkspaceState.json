@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\resources",
+    "\\src",
+    "\\src\\server",
+    "\\src\\server\\data",
+    "\\src\\static"
   ],
-  "SelectedNode": "\\C:\\Users\\Bayani\\Source\\Repos\\interview",
+  "SelectedNode": "\\src\\server\\data\\products.json",
   "PreviewInSolutionExplorer": false
 }

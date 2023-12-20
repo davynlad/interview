@@ -17,20 +17,31 @@ async function setup() {
         })
         .then(products => {
             displayProductsOnPage(products);
+            document.getElementById('targetSearch').addEventListener('input', function () {
+                searchProducts(this.value, products);
+            });
         })
         .catch(error => {
             console.error('Error fetching products:', error);
         });
+}
 
+function searchProducts(targetProduct, originalProducts) {
+    targetProduct = targetProduct.toLowerCase();
 
-    const filterInput = document.getElementById('targetSearch');
-    filterInput.addEventListener('input', () => {
-        const targetTitle = targetSearch.value.trim().toLowerCase();
-        if (targetTitle !== '') {
-            filterProductsByTitle(targetTitle, products);
+    const matchingProducts = [];
+    const productMatches = document.getElementById('result1');
+
+    originalProducts.forEach(product => {
+        let index = targetProduct.length - 1;
+        if (product.title.toLowerCase().charAt(index) == targetProduct.charAt(index)) {
+            matchingProducts.push(product);
         }
     });
+    displayProductsOnPage(matchingProducts);
+    
 }
+
 function sortProductsByPrice(products) {
     products.sort((a, b) => a.price - b.price);
 

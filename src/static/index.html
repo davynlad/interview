@@ -39,10 +39,15 @@
     </header>
 
     <main class="main-body">
+        <!-- Searchbar -->
         <div class="searchbar">
-            <input type="text" id="targetSearch" class="searchbar" placeholder="Search products…" oninput="filterProducts(this.value)"/>
+            <input type="text" id="targetSearch" class="searchbar" placeholder="Search products…" oninput="searchProducts(this.value)"/>
+            <span id="result"></span>
+            <span id="results"></span>
+            <span id="result1"></span>
         </div>
 
+        <!-- Display of Products -->
         <h1>Products</h1>
 
         <div id="products-list" class="products-display flex-container">
